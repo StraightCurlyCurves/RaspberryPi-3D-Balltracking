@@ -10,9 +10,10 @@ Author:
     Jan Schuessler, FHGR
 
 Latest Version:
-    1.0 - 2021.05.26 - submitted
+    1.0.1 - 2022.05.17 - uploaded to github
 
 Version History:
+	1.0 - 2021.05.26 - submitted
     0.1 - 2020.05.24 (started with coding)
 """
 
