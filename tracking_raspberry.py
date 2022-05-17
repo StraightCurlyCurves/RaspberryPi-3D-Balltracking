@@ -78,7 +78,7 @@ def getPosition3D(x, y, r):
     return distance*e
 
 # Network Client Config
-server_name = '192.168.43.44'
+server_name = '10.0.2.15'
 server_port = 10000
 
 # Create a UDP/IP socket
