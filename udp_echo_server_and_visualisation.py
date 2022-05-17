@@ -3,7 +3,7 @@ Project Name:
     BALLTRACKER
 
 Function of the Program:
-    - recognize a ball, track the 3D position of it nad send the position over the network to a PC
+    - recognize a ball, track the 3D position of it and send the position over the network to a PC
 	- (this file) receive the data from the client and display the ball position with Open3D 
 
 Author:
