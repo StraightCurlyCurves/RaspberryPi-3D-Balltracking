@@ -29,7 +29,7 @@ The 3D coordinates of the ball are then transmitted over the network to a comput
 - connect to raspberry via ssh.
 - start vnc server on the raspberry: `vncserver :1 -geometry 1920x1080 -depth 16`. The first time a password has to be set.
 - start TightVNC Viewer or realvnc on the computer and connect to the raspberry: raspberry-IP:display, i.e: 192.168.43.59:1.
-- change first four parameters in `tracking_raspberry.py` accordingly.
+- change first four parameters in `tracking_raspberry.py` **AND** `udp_echo_server_and_visualisation.py` accordingly.
 - run `tracking_raspberry.py` on the raspberry (via UI in vnc, not over ssh).
 - three windows will open; mask your object of interest.
 - run `udp_echo_server_and_visualisation.py` on the computer.
