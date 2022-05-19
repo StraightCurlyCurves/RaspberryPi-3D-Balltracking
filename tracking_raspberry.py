@@ -34,6 +34,14 @@ img_height = 400
 FOV = np.pi*33/180
 RADIUS = 0.02
 
+# Network Client Config
+networkConfig = dict()
+with open('network_config.txt', 'r') as file:
+    for line in file:
+        networkConfig[line.strip().split(':')[0]] = line.strip().split(':')[1]
+server_name = networkConfig['ip']
+server_port = networkConfig['port']
+
 # Commands to start vncserver:
 '''
 vncserver
@@ -76,10 +84,6 @@ def getPosition3D(x, y, r):
     e = [x,y,f]/np.linalg.norm([x,y,f])
 
     return distance*e
-
-# Network Client Config
-server_name = '192.168.43.103'
-server_port = 10000
 
 # Create a UDP/IP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
