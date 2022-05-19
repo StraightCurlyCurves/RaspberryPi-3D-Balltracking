@@ -1,2 +1,2 @@
-ip: 192.168.xx.xx
+ip: xxx.xxx.xx.xx
 port: 10000
