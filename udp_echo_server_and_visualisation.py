@@ -55,7 +55,7 @@ sock.bind(('', server_port))
 def vis3d():
 	try:
 		global pos, new_data
-		sphere = o3d.geometry.TriangleMesh.create_sphere(OBJECT_RADIUS=OBJECT_RADIUS, resolution=100)
+		sphere = o3d.geometry.TriangleMesh.create_sphere(radius=OBJECT_RADIUS, resolution=100)
 		# sphere.compute_triangle_normals()
 		sphere.compute_vertex_normals()
 		sphere.paint_uniform_color((241/255, 193/255, 0))
@@ -109,7 +109,7 @@ def vis3d():
 				if n_points > 1:
 					if len(spheres) == buf_size-1:
 						vis.remove_geometry(spheres[buf_size-2], reset_bounding_box=False)
-					spheres.appendleft(o3d.geometry.TriangleMesh.create_sphere(OBJECT_RADIUS=OBJECT_RADIUS/2, resolution=20))
+					spheres.appendleft(o3d.geometry.TriangleMesh.create_sphere(radius=OBJECT_RADIUS/2, resolution=20))
 					spheres[0].paint_uniform_color((0, 1, 0))
 					spheres[0].compute_vertex_normals()
 					spheres[0].translate(pos_track[1], relative=False)
