@@ -44,7 +44,7 @@ def main():
 
     try:
         server_name = networkConfig['ip']
-        server_port = networkConfig['port']
+        server_port = int(networkConfig['port'])
     except KeyError:
         print(f'Please define the ip address with <ip: [...]> and the port with <port: [...]> in {networkConfigFile}')
         return
