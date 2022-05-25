@@ -36,5 +36,6 @@ There are cases in which Open3D has trouble to calculate stuff under Windows wit
 - Run `tracking_raspberry.py` on the raspberry (via UI in vnc, not over ssh).
 - Three windows will open; mask your object of interest. The settings will be saved in `settings.csv`. 
 - Run `udp_echo_server_and_visualisation.py` on the computer.
+- Have fun!
 
-Note: Masking parameters will be saved. If light/object doesn't change, it is possible to set the variable `with_windows` to `False` and run `tracking_raspberry.py` via ssh without VNC server/viewer needed. 
+Note: Due the masking parameters will be saved in `settings.csv`, it is possible to set the variable `with_windows` to `False` and run `tracking_raspberry.py` via ssh without VNC server/viewer needed.
