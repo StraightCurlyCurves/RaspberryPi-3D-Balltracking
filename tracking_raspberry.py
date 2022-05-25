@@ -18,7 +18,7 @@ Version History:
 
 from picamera import PiCamera
 from picamera.array import PiRGBArray
-from time import sleep, time
+from time import sleep
 import cv2 as cv
 import numpy as np
 import socket

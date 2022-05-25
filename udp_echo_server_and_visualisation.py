@@ -22,7 +22,6 @@ import signal
 import socket
 import sys
 import open3d as o3d
-from time import sleep
 import threading
 import collections
 import numpy as np
