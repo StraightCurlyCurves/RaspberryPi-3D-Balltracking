@@ -3,6 +3,8 @@
 The Raspberry Pi 3D Balltracker allows you to track a ball in 3D with a 2D camera on the Raspberry Pi.
 The 3D coordinates of the ball are then transmitted over the network to a computer where the camera and the ball are visualized with Open3D.
 
+There are cases in which Open3D has trouble to calculate stuff under Windows with integrated graphics cards. Use a VM with Linux instead.
+
 ## Setup
 
 ### Raspberry
