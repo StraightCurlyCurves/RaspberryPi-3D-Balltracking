@@ -29,7 +29,7 @@ There are cases in which Open3D has trouble to calculate stuff under Windows wit
 
 - Connect raspberry and computer to the same network.
 - Connect to raspberry via ssh.
-- Start vnc server on the raspberry: `vncserver :1 -geometry 1920x1080 -depth 16 :1`. The first time a password has to be set.
+- Start vnc server on the raspberry: `vncserver :1 -geometry 1920x1080 -depth 16`. The first time a password has to be set.
 - Start TightVNC Viewer or realvnc on the computer and connect to the raspberry: raspberry-IP:display, i.e: 192.168.42.42:1.
 - Change first four parameters in `tracking_raspberry.py` **AND** `udp_echo_server_and_visualisation.py` accordingly.
 - In `network_config.txt`, set the IP address of the computer.
