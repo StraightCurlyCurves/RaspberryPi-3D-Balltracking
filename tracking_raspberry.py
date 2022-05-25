@@ -49,23 +49,6 @@ def main():
         print(f'Please define the ip address with <ip: [...]> and the port with <port: [...]> in {networkConfigFile}')
         return
 
-    # Commands to start vncserver:
-    '''
-    vncserver
-    --> Invokes Xvnc on the next available display and with suitable defaults.
-    vncserver :1
-    --> Invokes Xvnc on display :1.
-    vncserver -geometry 800x600 -depth 16 :1
-    --> Invokes Xvnc on display :1 with desktop size of 800x600 pixels and color depth of 16 bits per pixel.
-    vncserver -kill :1
-    --> Shuts down Xvnc server on display :1.
-    '''
-    # start vnc server (on Display :1) with 800x600px: --> vncserver
-    # start vnc server with Full-HD display: --> vncserver :1 -geometry 1920x1080 -depth 24
-
-    # on PC, connect with tightvncserver to: raspberry-IP:display#, i.e: 192.168.43.59:1 
-    # Password: 123456 (change password with command: vncpasswd)
-
     def nothing(x):
         pass
 
