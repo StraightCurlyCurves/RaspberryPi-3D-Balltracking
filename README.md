@@ -11,18 +11,18 @@ There are cases in which Open3D has trouble to calculate stuff under Windows wit
 
 - Activate ssh: https://www.raspberrypi.com/documentation/computers/remote-access.html#setting-up-an-ssh-server.
 - Make sure `picamera`, `opencv`,`numpy` ,`socket` ,`pickle` and `pandas` is installed for python 3.
-- Install vncserver with `sudo apt install tightvncserver` (outdated, consider to use a different one).
+- Install a VNC server. For example "tightvncserver" with `sudo apt install tightvncserver` (outdated, consider to use a different one).
 
 ### Computer
 
 #### Windows
 
 - Make sure `open3d` ,`socket` ,`pickle` ,`collections`, `pandas` and `numpy` is installed for python 3.
-- Install TightVNC: https://www.tightvnc.com/.
+- Install a VNC Viewer. For example TightVNC: https://www.tightvnc.com/.
 
 #### Linux (VM)
 - Make sure `open3d` ,`socket` ,`pickle` ,`collections`, `pandas` and `numpy` is installed for python 3.
-- Install realvnc: https://www.realvnc.com/.
+- Install a VNC Viewer. For example realvnc: https://www.realvnc.com/.
 - Change network settings in VM to "bridge".
 
 ## How to run
