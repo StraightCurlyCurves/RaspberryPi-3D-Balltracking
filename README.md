@@ -32,10 +32,10 @@ There are cases in which Open3D has trouble to calculate stuff under Windows wit
 - Start vnc server on the raspberry: `vncserver :1 -geometry 1920x1080 -depth 16`. The first time a password has to be set.
 - Start TightVNC Viewer or realvnc on the computer and connect to the raspberry: raspberry-IP:display, i.e: 192.168.42.42:1.
 - Change first four parameters in `tracking_raspberry.py` **AND** `udp_echo_server_and_visualisation.py` accordingly.
-- In `network_config.txt`, set the IP address of the computer.
-- Run `tracking_raspberry.py` on the raspberry (via UI in vnc, not over ssh).
+- On the raspberry, open `network_config.txt`, set the IP address of the computer (the ip in the VM! --> ifconfig).
+- Run `tracking_raspberry.py` on the raspberry (in vnc, not over ssh).
 - Three windows will open; mask your object of interest. The settings will be saved in `settings.csv`. 
-- Run `udp_echo_server_and_visualisation.py` on the computer.
+- Run `udp_echo_server_and_visualisation.py` on the computer (VM).
 - Have fun!
 
 Note: Due the masking parameters will be saved in `settings.csv`, it is possible to set the variable `with_windows` to `False` and run `tracking_raspberry.py` via ssh without VNC server/viewer needed.
